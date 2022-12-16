@@ -79,7 +79,7 @@ const ProductsFlashSaleBlock: React.FC<ProductsProps> = ({
     return str.join("&");
   };
   const getUrlQueryParams = (key: any, query: any) => {
-    return `http://localhost:3004/${key}?${serialize(query)}`;
+    return `http://localhost:3001/${key}?${serialize(query)}`;
   };
   const getAllProducts = () => {
     fetch(getUrlQueryParams("products", query))
